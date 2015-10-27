@@ -79,7 +79,7 @@ var Square = React.createClass({displayName: "Square",
 });
 
 
-React.render(
+ReactDOM.render(
     React.createElement(Square, null),
     document.getElementById('square')
 );

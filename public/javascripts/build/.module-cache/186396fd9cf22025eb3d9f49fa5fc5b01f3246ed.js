@@ -71,7 +71,7 @@ var Square = React.createClass({displayName: "Square",
         // Although we return an entire <p> element, react will smartly update
         // only the changed parts, which contain the seconds variable.
 
-        return React.createElement("div", {className: "fgdg", 
+        return React.createElement("div", {className: this.implodeClasses, 
         			onMouseEnter: this.changeColour, 
         			onMouseLeave: this.changeColourBack, 
         			onClick: this.increaseSize});
@@ -79,7 +79,7 @@ var Square = React.createClass({displayName: "Square",
 });
 
 
-React.render(
+React.renderComponent(
     React.createElement(Square, null),
     document.getElementById('square')
 );

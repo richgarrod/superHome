@@ -5,7 +5,7 @@ var Square = React.createClass({
         // This is called before our render function. The object that is 
         // returned is assigned to this.state, so we can use it later.
 
-        return { classname: 'square normalSquare' };
+        return { classnames: ['square', 'normalSquare'] };
     },
 
     componentDidMount: function(){
@@ -32,16 +32,38 @@ var Square = React.createClass({
         this.setState({elapsed: new Date() - this.props.start});
     },
 
+    implodeClasses: function() {
+    	return this.state.classnames.join();
+    },
+
     changeColour: function() {
-    	this.setState({classname: 'square hoveredSquare'});
+    	names = this.state.classnames;
+
+    	indexToRemove = names.indexOf('normalSquare');
+    	names.splice(indexToRemove, 1);
+    	names.push('hoveredSquare');
+
+    	this.setState({classnames: names});
     },
 
     changeColourBack: function() {
-    	this.setState({classname: 'square normalSquare'});
+    	names = this.state.classnames;
+
+    	indexToRemove = names.indexOf('hoveredSquare');
+    	names.splice(indexToRemove, 1);
+    	names.push('normalSquare');
+
+    	this.setState({classnames: names});    
     },
 
     increaseSize: function() {
-    	this.setState({classname: 'bigSquare hoveredSquare'})
+    	names = this.state.classnames;
+
+    	indexToRemove = names.indexOf('square');
+    	names.splice(indexToRemove, 1);
+    	names.push('bigSquare');
+
+    	this.setState({classnames: names});   
     },
 
     render: function() {
@@ -49,7 +71,7 @@ var Square = React.createClass({
         // Although we return an entire <p> element, react will smartly update
         // only the changed parts, which contain the seconds variable.
 
-        return <div className={this.state.classname} 
+        return <div className={this.implodeClasses} 
         			onMouseEnter={this.changeColour}
         			onMouseLeave={this.changeColourBack}
         			onClick={this.increaseSize}></div>;
