@@ -24,7 +24,8 @@ var Square = React.createClass({displayName: "Square",
 
     changeColourBack: function() {
 
-    	if(this.state.textValue !== undefined && this.state.textValue.length > 0) return;
+    	console.log(this.state.textValue.length);
+    	if(!this.state.textValue || this.state.textValue.length === 0) return;
 
     	names = this.state.classNames;
 

@@ -24,8 +24,8 @@ var Square = React.createClass({displayName: "Square",
 
     changeColourBack: function() {
 
-    	if(this.state.textValue !== undefined && this.state.textValue.length > 0) return;
-
+    	if(this.state.textValue.length === 0) return;
+    	
     	names = this.state.classNames;
 
     	indexToRemove = names.indexOf('hoveredSquare');

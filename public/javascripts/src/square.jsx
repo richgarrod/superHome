@@ -23,6 +23,9 @@ var Square = React.createClass({
     },
 
     changeColourBack: function() {
+
+    	if(this.state.textValue !== undefined && this.state.textValue.length > 0) return;
+
     	names = this.state.classNames;
 
     	indexToRemove = names.indexOf('hoveredSquare');
@@ -69,11 +72,17 @@ var Square = React.createClass({
     	}
     },
 
+    handleChange: function(e)
+    {
+    	this.setState({textValue: e.target.value});
+    },
+
     render: function() {
-        return <div className={this.state.classNameString} 
+        return <textArea className={this.state.classNameString} 
         			onMouseEnter={this.changeColour}
         			onMouseLeave={this.changeColourBack}
-        			onClick={this.adjustSize}></div>;
+        			onChange={this.handleChange}
+        			onClick={this.adjustSize}></textArea>;
     }
 });
 
