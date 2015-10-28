@@ -9,6 +9,14 @@ var Square = React.createClass({displayName: "Square",
     			 classNameString: 'square normalSquare'};
     },
 
+    componentWillMount: function () {
+        document.addEventListener('click', this.checkToClose, false);
+    },
+
+    componentWillUnmount: function () {
+        document.removeEventListener('click', this.checkToClose, false);
+    },
+
     changeColour: function() {
     	names = this.state.classNames;
 
@@ -38,14 +46,14 @@ var Square = React.createClass({displayName: "Square",
     	this.setState({classNames: names, classNameString: names.join(' ')});    
     },
 
-    increaseSize: function(indexToRemove) {
+    increaseSize: function(names, indexToRemove) {
     	names.splice(indexToRemove, 1);
     	names.push('bigSquare');
 
     	this.setState({classNames: names, classNameString: names.join(' ')});    
     },
 
-    decreaseSize: function() {
+    decreaseSize: function(names, indexToRemove) {
     	names.splice(indexToRemove, 1);
     	names.push('square');
 
@@ -53,13 +61,13 @@ var Square = React.createClass({displayName: "Square",
     },
 
     adjustSize: function() {
-    	names = this.state.classNames;
+    	var names = this.state.classNames;
 
-    	indexToRemove = names.indexOf('square');
+    	var indexToRemove = names.indexOf('square');
 
     	if (indexToRemove >= 0)
     	{
-    		this.increaseSize(indexToRemove);
+    		this.increaseSize(names, indexToRemove);
     		return;
     	}
 
@@ -67,27 +75,30 @@ var Square = React.createClass({displayName: "Square",
 
     	if (indexToRemove >= 0)
     	{
-    		this.decreaseSize(indexToRemove);
+    		this.decreaseSize(names, indexToRemove);
     		return;
     	}
     },
 
-    handleChange: function(e)
-    {
+    handleChange: function(e) {
     	this.setState({textValue: e.target.value});
     },
 
+    checkToClose: function(e) {
+        var indexToRemove = this.state.classNames.indexOf('bigSquare');
+        if(e.target.id !== this.props.id
+            && indexToRemove >= 0)
+        {
+            this.decreaseSize(this.state.classNames, indexToRemove);
+        }
+    },
+
     render: function() {
-        return React.createElement("textArea", {className: this.state.classNameString, 
+        return React.createElement("textArea", {id: this.props.id, className: this.state.classNameString, 
         			onMouseEnter: this.changeColour, 
         			onMouseLeave: this.changeColourBack, 
         			onChange: this.handleChange, 
-        			onClick: this.adjustSize});
+        			onClick: this.adjustSize}
+                );
     }
 });
-
-
-ReactDOM.render(
-    React.createElement(Square, null),
-    document.getElementById('squares')
-);
