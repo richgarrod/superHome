@@ -2,7 +2,7 @@ var SquareBox = React.createClass({
 
     getInitialState: function(){
 
-        var squares = []
+        var squares = [];
 
         for(var i = 0; i < 1000; i++)
         {

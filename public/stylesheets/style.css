@@ -7,12 +7,13 @@ a {
   color: #00B7FF;
 }
 
-textArea {
+textarea {
 	resize: none;
 }
 
 .square {
 	height: 10%;
+	width: 5%;
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
@@ -31,7 +32,7 @@ textArea {
 	height: 20%;
 	width: 20%;
 	position: absolute;
-	z-index: 3;
+	z-index: 3;s
 }
 
 .normalSquare {
