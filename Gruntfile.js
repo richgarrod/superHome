@@ -13,17 +13,9 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
-
-    watch: {
-      react: {
-        files: 'public/javascripts/src/*.js',
-        tasks: ['react']
-      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-react');
   
   grunt.registerTask('default', ['react']);

@@ -4,7 +4,7 @@ var SquareBox = React.createClass({displayName: "SquareBox",
 
         var squares = [];
 
-        for(var i = 0; i < 1000; i++)
+        for(var i = 0; i < 400; i++)
         {
             squares.push(React.createElement(Square, {key: i, id: "square" + i}));
         }
@@ -12,12 +12,9 @@ var SquareBox = React.createClass({displayName: "SquareBox",
     },
 
     render: function() {
-        return React.createElement("div", {id: "squareBox"}, this.state.squareHtml);
+        return  React.createElement("div", {id: "squareBox"}, 
+                    React.createElement(Time, null), 
+                    this.state.squareHtml
+                );
     }
 });
-
-
-ReactDOM.render(
-    React.createElement(SquareBox, null),
-    document.getElementById('squares')
-);
