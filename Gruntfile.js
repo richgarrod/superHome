@@ -13,10 +13,28 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    concat: {
+       dist: {
+         src: [
+           'public/stylesheets/*.scss',
+         ],
+         dest: 'public/stylesheets/build.scss',
+       }
+    },
+    sass: {                                 // Task
+       dist: {     
+         files: {
+           'public/stylesheets/build.css':'public/stylesheets/build.scss'
+         }
+
+       }
     }
   });
 
   grunt.loadNpmTasks('grunt-react');
-  
-  grunt.registerTask('default', ['react']);
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  grunt.registerTask('default', ['concat', 'sass', 'react']);
 };

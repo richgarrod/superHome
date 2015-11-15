@@ -1,0 +1,18 @@
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}

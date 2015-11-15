@@ -1,0 +1,876 @@
+
+body {
+  font: 0px "Comic Sans MS", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.normalSquare {
+	background-color: red;
+}
+
+.hoveredSquare {
+	background-color: orange;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+body {
+  font: 0px "Comic Sans MS", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
+$fontStack: 0px "Comic Sans MS", Helvetica, Arial, sans-serif; 
+
+body {
+  font: $fontStack;
+  margin: 0px;
+  height: 100vh;
+}
+
+textarea {
+	resize: none;
+}
+
+#mainContainer
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+$normalBackGround: red;
+$hoveredBackground: orange;
+
+.normalSquare {
+	background-color: $normalBackGround;
+}
+
+.hoveredSquare {
+	background-color: $hoveredBackground;
+}
+
+#squareBox {
+	width: 100%;
+	height: 100%;
+}
+
+.bigSquare {
+	height: 20%;
+	width: 20%;
+	position: absolute;
+	z-index: 10;
+}
+
+.square {
+	height: 5%;
+	width: 5%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+#squares {
+	padding: 0px;
+	height: 100%;
+}
+#time
+{
+	font-size: 50px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	margin-top: 10%;
+	text-align: center;
+}
